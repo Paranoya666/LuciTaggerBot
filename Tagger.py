@@ -24,10 +24,10 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀XaosTagger_bot**\n ile Grupunuzdaki userleri fərqli formalarda tağ edə bilərsiz \nKamandalar üçün =======> /help yazın**",
+  await event.reply("**🌀XaosTagbot**\n ile Grupunuzdaki userleri fərqli formalarda tağ edə bilərsiz \nKamandalar üçün =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Meni Gruba Ekle ➕', 'https://t.me/XaosTagger_bot?startgroup=a')],
+		      [Button.url('Meni Gruba Ekle ➕', 'https://t.me/XaosTagbot?startgroup=a')],
                       [Button.url('Fban kanal❌', 'https://t.me/XaosFban')],
                       [Button.url('Resmi📣', 'https://t.me/XaosResmii')],
 		      [Button.url('Developer👨🏻‍💻', 'https://t.me/mr_kabus_13')],
@@ -36,10 +36,10 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 XaosTagger_bot Kamandaları**\n\n**/tag <sebeb> - 5-li tağ Atar**\n\n**/etag <sebeb> - Emoji ile tağ atar**\n\n**/tektag sebeb - Userleri Tek Tek tağ atar**\n\n**/admins sebeb - Adminleri Tek Tek Tağ Eder**\n\n**/start - botu başlatır botu dayandırmaq - /cancel**"
+  helptext = "**🌀 XaosTagbot Kamandaları**\n\n**/tag <sebeb> - 5-li tağ Atar**\n\n**/etag <sebeb> - Emoji ile tağ atar**\n\n**/tektag sebeb - Userleri Tek Tek tağ atar**\n\n**/admins sebeb - Adminleri Tek Tek Tağ Eder**\n\n**/start - botu başlatır botu dayandırmaq - /cancel**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Meni Gruba Ekle➕', 'https://t.me/XaosTagger_bot?startgroup=a')],
+                      [Button.url('Meni Gruba Ekle➕', 'https://t.me/XaosTabot?startgroup=a')],
                       [Button.url('Fban ❌kanal', 'https://t.me/XaosFban')],
                       [Button.url('Resmi Kanal🔖', 'https://t.me/XaosResmii')],
 		      [Button.url('Developer🧑‍🔧', 'https://t.me/mr_kabus_13')],
@@ -49,7 +49,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çok funksiyalı tag botu axdaran gruo sahiblerine gore @TagXaosbot:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @TagXaosbot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
+  helptext = "**Çok funksiyalı tag botu axdaran gruo sahiblerine gore @Xaostagbot:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @TagXaosbot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Botu Gruba Ekle➕', 'https://t.me/lucitaggerbot?startgroup=a')],
